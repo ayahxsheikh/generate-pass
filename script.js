@@ -28,6 +28,7 @@ var specialCharacters = [
 // Array of numeric characters to be included in password
 var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
+
 // Array of lowercase characters to be included in password
 var lowerCasedCharacters = [
   'a',
@@ -90,7 +91,11 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  prompt('Your password must be a minimum of 10 characters');
+  prompt('Your password must include a lower-case character');
+  prompt('Your password must contain an upper-case character');
+  prompt('Your password must contain a number');
+  prompt ('Your password must contain a special character');
 }
 
 // Function for getting a random element from an array
