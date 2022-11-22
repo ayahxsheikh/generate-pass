@@ -91,11 +91,13 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  prompt('Your password must be a minimum of 10 characters');
-  prompt('Your password must include a lower-case character');
-  prompt('Your password must contain an upper-case character');
-  prompt('Your password must contain a number');
-  prompt ('Your password must contain a special character');
+  var criteriaPrompts = [
+    prompt('Your password must be a minimum of 10 characters'),
+    prompt('Your password must include a lower-case character'),
+    prompt('Your password must contain an upper-case character'),
+    prompt('Your password must contain a number'),
+    prompt ('Your password must contain a special character'),
+    ];
 }
 
 // Function for getting a random element from an array
