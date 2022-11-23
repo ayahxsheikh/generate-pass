@@ -97,12 +97,11 @@ function getPasswordOptions() {
       alert('Enter numerical value between 10 - 64 characters'); 
      return
     } 
-  
 
-    prompt('Your password must contain a lower-case character'),
-    prompt('Your password must contain an upper-case character'),
-    prompt('Your password must contain a number'),
-    prompt ('Your password must contain a special character');
+    var lowerC = prompt('Enter a lower-case character');
+    var upperC = prompt('Enter an upper-case character');
+    var number = prompt('Enter a number');
+    var specialC = prompt ('Enter a special character');
   
     
   }
