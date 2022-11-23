@@ -92,9 +92,8 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {  
   var passLength = prompt('How many characters would you like your password to contain?'); 
-  var validAns = passLength > 10 || passLength < 64;
   
-    if (passLength != validAns || passLength == NaN)  {
+    if (passLength < 10 || passLength > 64|| passLength == NaN)  {
       alert('Enter numerical value between 10 - 64 characters'); 
      return
     } 
@@ -107,9 +106,6 @@ function getPasswordOptions() {
   
     
   }
-  
-
-getPasswordOptions();
 
 
 // Function for getting a random element from an array
