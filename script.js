@@ -90,21 +90,26 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
-  var passLength = prompt('How many characters would you like your password to contain?'); 
-  var validAns = passLength > 10 || passLength < 64; {  
-      if (passLength != validAns) {
+function getPasswordOptions() {  
+  while (true) {
+    var passLength = prompt('How many characters would you like your password to contain?'); 
+    var validAns = passLength > 10 || passLength < 64;
+
+    if (passLength != validAns) {
       alert('Enter numerical value between 10 - 64 characters');
-      
+      prompt (passLength);
     } 
+  
 
     prompt('Your password must contain a lower-case character'),
     prompt('Your password must contain an upper-case character'),
     prompt('Your password must contain a number'),
     prompt ('Your password must contain a special character');
+  }  
     
   }
-}
+  
+
 getPasswordOptions();
 
 
