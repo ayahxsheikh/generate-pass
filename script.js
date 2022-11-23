@@ -91,14 +91,17 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  var criteriaPrompts = [
-    prompt('Your password must be a minimum of 10 characters'),
+  var passLength = prompt('How many characters would you like your password to contain?'); {
+    if (passLength < 10 || passLength < 64);
+    alert('Enter numerical value between 10 - 64 characters');
+  } 
+
     prompt('Your password must contain a lower-case character'),
     prompt('Your password must contain an upper-case character'),
     prompt('Your password must contain a number'),
-    prompt ('Your password must contain a special character'),
-    ];
-    console.log(getPasswordOptions);
+    prompt ('Your password must contain a special character');
+    
+  
 }
 getPasswordOptions();
 
