@@ -93,15 +93,15 @@ var upperCasedCharacters = [
 function getPasswordOptions() {  
   var passLength = prompt('How many characters would you like your password to contain?'); 
   
-    if (passLength < 10 || passLength > 64|| passLength == NaN)  {
+    if (passLength < 10 || passLength > 64 || passLength == NaN)  {
       alert('Enter numerical value between 10 - 64 characters'); 
      return
     } 
 
-    var lowerC = prompt('Enter a lower-case character');
-    var upperC = prompt('Enter an upper-case character');
-    var number = prompt('Enter a number');
-    var specialC = prompt ('Enter a special character');
+    var lowerC = confirm ('Password will include a lower cased character');
+    var upperC = confirm ('Password will include an upper-cased character');
+    var number = confirm ('Password will include a number');
+    var specialC = confirm ('Password will include a special character');
   
     
   }
