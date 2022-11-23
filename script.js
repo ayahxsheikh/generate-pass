@@ -94,9 +94,9 @@ function getPasswordOptions() {
   var passLength = prompt('How many characters would you like your password to contain?'); 
   var validAns = passLength > 10 || passLength < 64;
   
-    if (passLength !== validAns || passLength == NaN)  {
+    if (passLength != validAns || passLength == NaN)  {
       alert('Enter numerical value between 10 - 64 characters'); 
-      prompt(passLength);
+     return
     } 
   
 
@@ -127,7 +127,7 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generatePassword()+ getPasswordOptions();
   var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
