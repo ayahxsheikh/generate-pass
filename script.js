@@ -94,9 +94,9 @@ function getPasswordOptions() {
   var passLength = prompt('How many characters would you like your password to contain?'); 
   var validAns = passLength > 10 || passLength < 64;
   
-    if (!validAns) {
-      alert('Enter numerical value between 10 - 64 characters');
-      passLength;
+    if (passLength !== validAns || passLength == NaN)  {
+      alert('Enter numerical value between 10 - 64 characters'); 
+      prompt(passLength);
     } 
   
 
