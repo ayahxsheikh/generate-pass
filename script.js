@@ -98,11 +98,11 @@ var upperCasedCharacters = [
       return
       } 
 
+      var specialC = confirm ('Password will include a special character');
+      var number = confirm ('Password will include a number');
       var lowerC = confirm ('Password will include a lower cased character');
       var upperC = confirm ('Password will include an upper-cased character');
-      var number = confirm ('Password will include a number');
-      var specialC = confirm ('Password will include a special character');
-
+      
     }
 
 // Function for getting a random element from an array
@@ -111,19 +111,19 @@ var upperCasedCharacters = [
     var indexEl = arr[randomIndex];
 
     return indexEl;
-  }
+  } 
 
 // Function to generate password with user input
-function generatePassword() {
-
+  function generatePassword() {
+    
 }
 
 // Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
+  var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword()+ getPasswordOptions();
+  function writePassword() {
+  var password = generatePassword();
   var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
