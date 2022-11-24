@@ -109,14 +109,13 @@ var upperCasedCharacters = [
 // Function for getting a random element from an array
   function getRandom(arr) {
     var randomIndex = Math.floor(Math.random() * arr.length);
-    var indexEl = arr[randomIndex];
+    return arr[randomIndex];
 
-    return indexEl;
   } 
 
 // Function to generate password with user input
   function generatePassword() {
-    
+    var options = getPasswordOptions();
 }
 
 // Get references to the #generate element
