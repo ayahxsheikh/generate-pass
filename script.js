@@ -103,6 +103,7 @@ var upperCasedCharacters = [
       var lowerC = confirm ('Password will include a lower cased character');
       var upperC = confirm ('Password will include an upper-cased character');
       
+      return [passLength, specialC, number, lowerC, upperC]
     }
 
 // Function for getting a random element from an array
