@@ -130,8 +130,8 @@ var upperCasedCharacters = [
     var options = getPasswordOptions();
     
     if (options.specialC == true) {
-      getRandom(specialCharacters) 
-      console.log(options);
+      var specials = getRandom(specialCharacters) 
+      console.log(specials);
     }
   }
 
