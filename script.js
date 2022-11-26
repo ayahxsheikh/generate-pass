@@ -89,27 +89,26 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+ var passLength;
+
 // Function to prompt user for password options
   function getPasswordOptions() {  
-    var passLength = prompt('How many characters would you like your password to contain?'); 
+
+       passLength = prompt('How many characters would you like your password to contain?'); 
     
       if (passLength < 10 || passLength > 64 || passLength == NaN)  {
         alert('Enter numerical value between 10 - 64 characters'); 
       return
       } 
 
-      var specialC = confirm ('Password will include a special character');
-      var number = confirm ('Password will include a number');
-      var lowerC = confirm ('Password will include a lower cased character');
-      var upperC = confirm ('Password will include an upper-cased character');
-      
-      return {
-        passLength: passLength,
-        specialC: specialC, 
-        number: number,
-        lowerC: lowerC,
-        upperC: upperC
+      var options = {
+        specialC: confirm ('Password will include a special character'),
+        number: confirm ('Password will include a number'),
+        lowerC: confirm ('Password will include a lower cased character'),
+        upperC: confirm ('Password will include an upper-cased character')
+    
       };
+
     } 
 
 // Function for getting a random element from an array
@@ -122,8 +121,7 @@ var upperCasedCharacters = [
 // Function to generate password with user input
   function generatePassword() {
     var finalPass = '';
-    var optionsArr = getPasswordOptions();
-    console.log(optionsArr);
+    console.log();
     
     if (true) {
       
