@@ -92,24 +92,24 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
   function getPasswordOptions() {  
 
-  var passLength = prompt('How many characters would you like your password to contain?'); 
+    var passLength = prompt('How many characters would you like your password to contain?'); 
     
-      if (passLength < 10 || passLength > 64 || passLength == NaN)  {
-        alert('Enter numerical value between 10 - 64 characters'); 
+    if (passLength < 10 || passLength > 64 || passLength == NaN)  {
+      alert('Enter numerical value between 10 - 64 characters'); 
         return
-      }
+    }
 
-        var specialC = confirm ('Password will include a special character');
-        var number = confirm ('Password will include a number');
-        var lowerC = confirm ('Password will include a lower cased character');
-        var upperC = confirm ('Password will include an upper-cased character');
+    var specialC = confirm ('Password will include a special character');
+    var number = confirm ('Password will include a number');
+    var lowerC = confirm ('Password will include a lower cased character');
+    var upperC = confirm ('Password will include an upper-cased character');
 
-      return {
-        passLength: passLength,
-        specialC: specialC, 
-        number: number,
-        lowerC: lowerC,
-        upperC: upperC
+    return {
+      passLength: passLength,
+      specialC: specialC, 
+      number: number,
+      lowerC: lowerC,
+      upperC: upperC
     };
   }  
 
@@ -123,12 +123,11 @@ var upperCasedCharacters = [
   function generatePassword() {
     var finalPass = '';
     var options = getPasswordOptions();
-    console.log(options);
     
-    if (true) {
+    if (options.specialC == true) {
       
     }
-}
+  }
 
 // Get references to the #generate element
   var generateBtn = document.querySelector('#generate');
