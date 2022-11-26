@@ -94,9 +94,14 @@ var upperCasedCharacters = [
 
     var passLength = prompt('How many characters would you like your password to contain?'); 
     
-    if (passLength < 10 || passLength > 64 || passLength == NaN)  {
-      alert('Enter numerical value between 10 - 64 characters'); 
-        return
+    if (passLength == null)  {
+      alert('Click generate password button to create password');
+      return null;
+    } 
+     else if (passLength < 10 || passLength > 64 || passLength == NaN) {
+       alert('Enter numerical value between 10 - 64 characters'); {
+       return;
+     }
     }
 
     var specialC = confirm ('Password will include a special character');
@@ -125,7 +130,8 @@ var upperCasedCharacters = [
     var options = getPasswordOptions();
     
     if (options.specialC == true) {
-      
+      getRandom(specialCharacters) 
+      console.log(options);
     }
   }
 
