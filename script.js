@@ -123,13 +123,14 @@ var upperCasedCharacters = [
     var finalPass = '';
     var options = getPasswordOptions();
 
-    if (passLength > 0) {
+    if (options.length > 0) {
 
-      if (specialC) {
+      while (condition) {
         var specials = getRandom(specialCharacters); 
         finalPass += passLength + specials;
-        }
-      
+        
+      } 
+       
     }
     
   }
