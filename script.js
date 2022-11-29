@@ -88,11 +88,14 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
+//Global Variable:
+  var options = [];
+  var passLength = 0;
 
 // Function to prompt user for password options
   function getPasswordOptions() {  
 
-    var passLength = prompt('How many characters would you like your password to contain?'); 
+    passLength = prompt('How many characters would you like your password to contain?'); 
     
     if (passLength == null)  {
       alert('Click generate password button to create password');
