@@ -115,16 +115,16 @@ var upperCasedCharacters = [
     
       
       if (confirms.specialC === true) 
-        options += options.concat(specialCharacters); 
+        options = options.concat(specialCharacters); 
 
       if (confirms.number === true) 
-        options += options.concat(numericCharacters);
+        options = options.concat(numericCharacters);
 
       if (confirms.lowerC === true) 
-        options += options.concat(lowerCasedCharacters);
+        options = options.concat(lowerCasedCharacters);
 
       if (confirms.upperC === true)
-        options += options.concat(upperCasedCharacters);
+        options = options.concat(upperCasedCharacters);
 
     return [options];
   }  
