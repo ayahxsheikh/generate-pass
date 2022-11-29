@@ -114,13 +114,19 @@ var upperCasedCharacters = [
       };
     
       
-      if (confirms.specialC === true) {
+      if (confirms.specialC === true) 
         options += options.concat(specialCharacters); 
-        
-        
-        } 
 
-    return [];
+      if (confirms.number === true) 
+        options += options.concat(numericCharacters);
+
+      if (confirms.lowerC === true) 
+        options += options.concat(lowerCasedCharacters);
+
+      if (confirms.upperC === true)
+        options += options.concat(upperCasedCharacters);
+
+    return true;
   }  
 
 // Function for getting a random element from an array
