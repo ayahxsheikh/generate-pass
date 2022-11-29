@@ -126,18 +126,23 @@ var upperCasedCharacters = [
       if (confirms.upperC === true)
         options += options.concat(upperCasedCharacters);
 
-    return true;
+    return [options];
   }  
 
 // Function for getting a random element from an array
-  function getRandom(arr) {
-    var randomIndex = Math.floor(Math.random() * arr.length);
-    return arr[randomIndex];
+  function getRandom() {
+    var password = '';
+    while (password.length < passLength) {
+      var random = Math.floor(Math.random() * options.length)
+      password += options[random];
+    }
+  
+    return password;
   } 
 
 // Function to generate password with user input
   function generatePassword() {
-     getPasswordOptions();
+     return getPasswordOptions(), getRandom(); 
   
   }
 
