@@ -103,15 +103,21 @@ var upperCasedCharacters = [
        return;
      }
     }
-      var options = {
+      var confirms = {
         specialC: confirm ('Password will include a special character'),
         number: confirm ('Password will include a number'),
         lowerC: confirm ('Password will include a lower cased character'),
         upperC: confirm ('Password will include an upper-cased character'),
       };
+    
+      
+      if (confirms.specialC === true) {
+        options += options.concat(specialCharacters); 
+        
+        
+        } 
 
-
-    return [passLength, options];
+    return [];
   }  
 
 // Function for getting a random element from an array
@@ -122,14 +128,7 @@ var upperCasedCharacters = [
 
 // Function to generate password with user input
   function generatePassword() {
-    var finalPass = '';
      getPasswordOptions();
-
-    if (options.specialC === true) {
-      var specials = getRandom(specialCharacters); 
-      finalPass += passLength + specials;
-        
-      } 
   
   }
 
