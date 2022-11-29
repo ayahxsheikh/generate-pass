@@ -17,10 +17,12 @@ I have used a combination of prompts and conditional statements and loops that t
 
 ## Usage
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+<img width="1001" alt="p-g" src="https://user-images.githubusercontent.com/110252168/204644990-785adcc9-3e95-4cb9-b515-25e1f47103da.png">
+
 
 
 ## Links 
 https://github.com/ayahxsheikh/generate-pass 
+https://ayahxsheikh.github.io/generate-pass/
 
 © 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
